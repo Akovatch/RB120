@@ -1,0 +1,30 @@
+enter: Press enter to continue...
+choose_move: "Please choose (r)ock, (p)aper, (sc)issors, (l)izard, or (sp)ock:"
+invalid: Invalid input - please try again.
+ask_name: What's your name?
+sorry: Sorry, must enter a value.
+choose_opponent: "Please choose your opponent:"
+opponents: "(1) R2D2  (2) Hal  (3) Bender  (4) WALL-E  (5) DJ Roomba"
+banner: "* * * Rock, Paper, Scissors, Lizard, Spock * * *"
+points: How many points would you like to play to?
+integer: Sorry, please choose a positive integer.
+thank_you: Thank You for playing Rock, Paper, Scissors, Lizard, Spock. Good bye!
+ask_history: Would you like to see a list of moves made by each player? (y / n)
+ask_rules: Would you like to read the rules of the game? (y / n)
+ask_play_again: Would you like to play again? (y / n)
+
+rules: |+
+  *  *  *  Rock, Paper, Scissors, Lizard, Spock  *  *  *
+
+  "Rock, Paper, Scissors, Lizard, Spock" is an expansion
+  of the classic game "Rock, Paper, Scissors."
+
+  As Sheldon from The Big Bang Theory explains:
+  "Scissors cuts paper, paper covers rock, rock crushes
+  lizard, lizard poisons Spock, Spock smashes scissors,
+  scissors decapitates lizard, lizard eats paper, paper
+  disproves Spock, Spock vaporizes rock, and as it always
+  has...rock crushes scissors."
+
+  Don't worry if you can't remember all of this - the game
+  will announce the winner of each round automatically!
