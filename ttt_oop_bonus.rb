@@ -1,4 +1,3 @@
-# User Interface module
 module UI
   def enter_to_continue
     space_puts "Press enter to continue..."
@@ -36,7 +35,7 @@ MSG
 
 *** A Guide to Tic Tac Toe ***
 
-How to win: A round is won if a player is able to select squares in a row,
+How to win: A round is won if a player is able to select 3 squares in a row,
 either horizontally, vertically, or diagonally.
 
 Taking turns: The user chooses who will play first. Afterwards, the order of
@@ -356,13 +355,14 @@ class TTTGame
       players_take_turns
       update_scoreboard
       display_result
+      scoreboard.display(human.name, computer.name)
       break if grand_winner?
       enter_to_continue
       reset
     end
   end
 
-  def players_take_turns # alternating turns until someone wins or tie
+  def players_take_turns
     loop do
       clear_screen_and_display_board
       current_player_moves
@@ -524,7 +524,6 @@ class TTTGame
     else # (nil)
       puts "The board is full!"
     end
-    scoreboard.display(human.name, computer.name)
   end
 
   def play_again?
